@@ -57,12 +57,14 @@ if ($numArgs == 1) {
         exit;
     } elsif (@ARGV[0] eq "-Dall" or @ARGV[0] eq "-Dbug") {
         printWarning("Single-line flag not entered.");
-        print "\n";
+        # TO_DO -> Fix when actual program is created.
+        die "\nExiting...\n";
     } else {
         die "\nInvalid flag entered: @ARGV[0]\n\n$help\n";
     }
 }
 
+# If there's more than one command-line argument entered.
 foreach my $arg (@ARGV) {
     if ($arg eq "-Dall") {
         $verbose = 1;

@@ -1,2 +1,5 @@
 # Hide CMD files.
 *.cmd
+
+# Editorconfig
+.editorconfig
