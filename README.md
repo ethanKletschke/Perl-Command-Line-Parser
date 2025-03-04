@@ -57,4 +57,4 @@ The table below lists the planned options that could be implemented in later ver
 
 ### 1.0
 
-Program is initially released onto [Github]().
+Program is initially released onto [Github](https://github.com/ethanKletschke/Perl-Command-Line-Parser).

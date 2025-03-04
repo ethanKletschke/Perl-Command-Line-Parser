@@ -3,3 +3,6 @@
 
 # Editorconfig
 .editorconfig
+
+# Test files
+*.test.pl
