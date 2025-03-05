@@ -3,17 +3,17 @@ use strict;
 # The number of command line args.
 my $numArgs = $#ARGV + 1;
 
-# The version of the program.
-my $version = "1.0";
+# NB => The version of the program.
+my $version = "1.1.0";
 
 # Help menu for the "-h" flag
 my $help = <<END_MSG;
 This program's accepted command line arguments are as follows:
-\t"-v" -> The current version of the program.
+\t"-v" or "--version" -> The current version of the program.
+\t"-h" or "--help" -> Help message.
 \t"-Dall" -> Display all messages (Verbosity mode).
 \t"-Dbug" -> Display debugging messages.
 \t"-Dwarn -> Display warnings.
-\t"-h" -> Help message.
 END_MSG
 
 if ($numArgs == 0) {
@@ -49,16 +49,14 @@ sub printWarning {
 
 # If there's only one argument entered
 if ($numArgs == 1) {
-    if (@ARGV[0] eq "-v") {
-        print "\nPerl Command Line ArgParser\nVersion 1.0\n\n";
+    if (@ARGV[0] eq "-v" or @ARGV[0] eq "--version") {
+        print "\nPerl Command Line ArgParser\n$version\n\n";
         exit;
-    } elsif (@ARGV[0] eq "-h") {
+    } elsif (@ARGV[0] eq "-h" or @ARGV[0] eq "--help") {
         print "\n$help\n";
         exit;
-    } elsif (@ARGV[0] eq "-Dall" or @ARGV[0] eq "-Dbug") {
-        printWarning("Single-line flag not entered.");
-        # TO_DO -> Fix when actual program is created.
-        die "\nExiting...\n";
+    } elsif (@ARGV[0] eq "-Dall" or @ARGV[0] eq "-Dbug" or @ARGV[0] eq "-Dwarn") {
+        die "\nSingle-line flag not entered.\nExiting...\n";
     } else {
         die "\nInvalid flag entered: @ARGV[0]\n\n$help\n";
     }
@@ -72,7 +70,12 @@ foreach my $arg (@ARGV) {
     } elsif ($arg eq "-Dbug") {
         $debug = 1;
         printDebug("Debug output enabled.")
+    } elsif ($arg eq "-Dwarn") {
+        $warns = 1;
+        printWarning("Warnings enabled.");
     } elsif ($arg eq "-v" or $arg eq "-h") {
         die "One-time flag entered: $arg\n\n$help\n";
+    } else {
+        die "\nInvalid flag entered: $arg\n\n$help\n";
     }
 }

@@ -1,19 +1,34 @@
-# Perl Command Line Parser v1.0
+# Perl Command Line Parser v1.1.0
 
 A test script written in [Perl](https://en.wikipedia.org/wiki/Perl "Source: Wikipedia.org") to parse
 command line arguments and output different things depending on the option entered.
 
+
+## Authorship 
+
 Made by Ethan Kletschke.
+
+### Details of Project
+
+- Date of Initial Commit: 2025-02-28
+- Current Version: `1.1.0`
+- Language used: [Perl](https://www.perl.org/about.html "Source: www.perl.org")
 
 ## Table of Contents
 
-- [Perl Command Line Parser v1.0](#perl-command-line-parser-v10)
+- [Perl Command Line Parser v1.1.0](#perl-command-line-parser-v110)
+  - [Authorship](#authorship)
+    - [Details of Project](#details-of-project)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Options](#options)
   - [Planned options](#planned-options)
+  - [Incorrect CLI Input](#incorrect-cli-input)
+    - [Single-line Flag Entered with Other Flags](#single-line-flag-entered-with-other-flags)
+    - ["Single-line Flag not Entered" Error](#single-line-flag-not-entered-error)
   - [Changelog](#changelog)
-    - [1.0](#10)
+    - [**_1.1.0_**](#110)
+    - [**_1.0_**](#10)
 
 ## Description
 
@@ -24,13 +39,13 @@ parses command line arguments passed to the program.
 
 The table below lists the currently-implemented valid command-line arguments:
 
-| **Option** |                                            **Description**                                           |
-|:----------:|:----------------------------------------------------------------------------------------------------:|
-|    `-v`    |                                     Displays version information.                                    |
-|    `-h`    |          Help menu. Also displays on incorrect CLI input (see [here](#incorrect-cli-input)).         |
-|   `-Dall`  | Short for `Display all`. Turns on "verbosity mode", which displays both debug messages and warnings. |
-|   `-Dbug`  |                        Short for `Display debug`. Turns on debugging messages.                       |
-|  `-Dwarn`  |                       Short for `Display warnings`. Turns on warning messages.                       |
+|    **Option**    |                                           **Description**                                            |
+| :--------------: | :--------------------------------------------------------------------------------------------------: |
+| `-v`/`--version` |                                    Displays version information.                                     |
+|  `-h`/`--help`   |         Help menu. Also displays on incorrect CLI input (see [here](#incorrect-cli-input)).          |
+|     `-Dall`      | Short for `Display all`. Turns on "verbosity mode", which displays both debug messages and warnings. |
+|     `-Dbug`      |                       Short for `Display debug`. Turns on debugging messages.                        |
+|     `-Dwarn`     |                       Short for `Display warnings`. Turns on warning messages.                       |
 
 (Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables# "Table generator site"))
 
@@ -38,23 +53,65 @@ The table below lists the currently-implemented valid command-line arguments:
 
 The table below lists the planned options that could be implemented in later versions of this "app":
 
-|       **Option**      |                               **Description**                               | **Planned Version\*** |
-|:---------------------:|:---------------------------------------------------------------------------:|:-------------------:|
-|      `--version`      |                                Alias of `-v`.                               |         1.1         |
-|        `--help`       |                                Alias of `-h`.                               |         1.1         |
-|     `-m "Literal"`    | Displays the string `"Literal"` that comes immediately after the `-m` flag. |         1.2         |
-| `--message "Literal"` |                                Alias of `-m`.                               |         1.2         |
-|          `-l`         |                          Log the output to a file.                          |         1.2         |
-|        `--log`        |                                Alias of `-l`                                |         1.2         |
-|          `-s`         |                          Save output to a file(?).                          |        _???_        |
-|        `--save`       |                                Alias of `-s`.                               |        _???_        |
+|      **Option**       |                               **Description**                               | **Planned Version\*** |
+| :-------------------: | :-------------------------------------------------------------------------: | :-------------------: |
+|    `-m "Literal"`     | Displays the string `"Literal"` that comes immediately after the `-m` flag. |          1.2          |
+| `--message "Literal"` |                               Alias of `-m`.                                |          1.2          |
+|         `-l`          |                          Log the output to a file.                          |          1.2          |
+|        `--log`        |                                Alias of `-l`                                |          1.2          |
+|         `-s`          |                          Save output to a file(?).                          |         _???_         |
+|       `--save`        |                               Alias of `-s`.                                |         _???_         |
 
 \* - Not 100% accurate.
 
 (Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables# "Table generator site"))
 
+## Incorrect CLI Input
+
+### Single-line Flag Entered with Other Flags
+
+If the user enters a single-output option (such as `-v` or `-h`) along with more than one option, then the program will
+close with an error message.
+
+### "Single-line Flag not Entered" Error
+
+Or if the user enters a normal flag (such as `-Dall`) as the only option (as of v1.1), the program will close with an error
+message.
+
+For example:
+
+```powershell
+perl Main.pl -Dall
+```
+
+Will show the following output (as of v1.1):
+
+```
+Single-line flag not entered.
+Exiting...
+```
+
+
 ## Changelog
 
-### 1.0
+### **_1.1.0_**
+
+New Features:
+- Allow `--version` to be used as an alias of `-v`.
+- Allow `--help` to be used as an alias of `-h`.
+
+Implementation Tweaks:
+- Re-ordered the `$help` string's list to show single-line flags first.
+
+Bug fixes:
+- Tweaked `if` statements to actually allow for warning outputs to be enabled.
+- Tweaked single-argument handling a bit.
+  - Temporarily use the `die` keyword to kill the program when a single-line flag is not entered.
+    - To be fixed in a future release.
+- Fix `README.md`
+  - Add missing heading "[Incorrect CLI Output](#incorrect-cli-input)".
+  - Add various new sections.
+
+### **_1.0_**
 
 Program is initially released onto [Github](https://github.com/ethanKletschke/Perl-Command-Line-Parser).
