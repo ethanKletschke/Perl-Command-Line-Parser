@@ -53,10 +53,10 @@ The table below lists the planned options that could be implemented in later ver
 
 |      **Option**       |                               **Description**                               | **Planned Version\*** |
 | :-------------------: | :-------------------------------------------------------------------------: | :-------------------: |
-|    `-m "Literal"`     | Displays the string `"Literal"` that comes immediately after the `-m` flag. |          1.2          |
-| `--message "Literal"` |                               Alias of `-m`.                                |          1.2          |
-|         `-l`          |                          Log the output to a file.                          |          1.2          |
-|        `--log`        |                                Alias of `-l`                                |          1.2          |
+|    `-m "Literal"`     | Displays the string `"Literal"` that comes immediately after the `-m` flag. |          1.3          |
+| `--message "Literal"` |                               Alias of `-m`.                                |          1.3          |
+|         `-l`          |                          Log the output to a file.                          |          1.3          |
+|        `--log`        |                                Alias of `-l`                                |          1.3          |
 |         `-s`          |                          Save output to a file(?).                          |         _???_         |
 |       `--save`        |                               Alias of `-s`.                                |         _???_         |
 
