@@ -51,18 +51,18 @@ sub printWarning {
 
 # If there's only one argument entered
 if ($numArgs == 1) {
-    if (@ARGV[0] eq "-v" or @ARGV[0] eq "--version") {
+    if ($ARGV[0] eq "-v" or $ARGV[0] eq "--version") {
         # Display the program name and version.
         print "\nPerl Command Line ArgParser\n$version\n\n";
         exit;
-    } elsif (@ARGV[0] eq "-h" or @ARGV[0] eq "--help") {
+    } elsif ($ARGV[0] eq "-h" or $ARGV[0] eq "--help") {
         # Display the help.
         print "\n$help\n";
         exit;
-    } elsif (@ARGV[0] eq "-Dall" or @ARGV[0] eq "-Dbug" or @ARGV[0] eq "-Dwarn") {
+    } elsif ($ARGV[0] eq "-Dall" or $ARGV[0] eq "-Dbug" or $ARGV[0] eq "-Dwarn") {
         die "\nSingle-line flag not entered.\nExiting...\n";
     } else {
-        die "\nInvalid flag entered: @ARGV[0]\n\n$help\n";
+        die "\nInvalid flag entered: $ARGV[0]\n\n$help\n";
     }
 }
 
