@@ -102,10 +102,6 @@ this repository:
   - Tweak flag setting:
     - Set all flags at once when testing for multiple flags, i.e. setting `$verbose` and unsetting the other flags.
 
-`README` Tweaks:
-
--
-
 ### **_1.1.0_**
 
 New Features:
