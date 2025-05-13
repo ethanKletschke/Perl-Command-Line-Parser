@@ -1,8 +1,2 @@
-# Hide CMD files.
-*.cmd
-
 # Editorconfig
 .editorconfig
-
-# Test files
-*.test.pl

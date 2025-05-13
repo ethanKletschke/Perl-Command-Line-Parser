@@ -3,12 +3,9 @@
 A test script written in [Perl](https://en.wikipedia.org/wiki/Perl "Source: Wikipedia.org") to parse
 command line arguments and output different things depending on the option entered.
 
+This project was made by Ethan Kletschke.
 
-## Authorship 
-
-Made by Ethan Kletschke.
-
-### Details of Project
+## Details of Project
 
 - Date of Initial Commit: 2025-02-28
 - Current Version: `1.1.0`
@@ -17,8 +14,7 @@ Made by Ethan Kletschke.
 ## Table of Contents
 
 - [Perl Command Line Parser v1.1.0](#perl-command-line-parser-v110)
-  - [Authorship](#authorship)
-    - [Details of Project](#details-of-project)
+  - [Details of Project](#details-of-project)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Options](#options)
@@ -27,13 +23,15 @@ Made by Ethan Kletschke.
     - [Single-line Flag Entered with Other Flags](#single-line-flag-entered-with-other-flags)
     - ["Single-line Flag not Entered" Error](#single-line-flag-not-entered-error)
   - [Changelog](#changelog)
+    - [**_1.2.0_**](#120)
     - [**_1.1.0_**](#110)
     - [**_1.0_**](#10)
 
 ## Description
 
-The **_Perl Command Line Parser_** is a [CLI](https://en.wikipedia.org/wiki/Command-line_interface "Source: Wikipedia.org") app (currently just a test script) that 
-parses command line arguments passed to the program.
+The **_Perl Command Line Parser_** is a [CLI](https://en.wikipedia.org/wiki/Command-line_interface "Source: Wikipedia.org") app
+(just a test script) that parses command line arguments passed to the program. It is only intended to be
+a 
 
 ## Options
 
@@ -94,16 +92,33 @@ Exiting...
 
 ## Changelog
 
+### **_1.2.0_**
+
+Sorry for the hiatus. Here's the most recent updates to
+this repository:
+
+- Implementation Tweaks:
+  - Add more comments.
+  - Tweak flag setting:
+    - Set all flags at once when testing for multiple flags, i.e. setting `$verbose` and unsetting the other flags.
+
+`README` Tweaks:
+
+-
+
 ### **_1.1.0_**
 
 New Features:
+
 - Allow `--version` to be used as an alias of `-v`.
 - Allow `--help` to be used as an alias of `-h`.
 
 Implementation Tweaks:
+
 - Re-ordered the `$help` string's list to show single-line flags first.
 
 Bug fixes:
+
 - Tweaked `if` statements to actually allow for warning outputs to be enabled.
 - Tweaked single-argument handling a bit.
   - Temporarily use the `die` keyword to kill the program when a single-line flag is not entered.
