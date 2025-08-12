@@ -1,14 +1,18 @@
-# Perl Command Line Parser v1.1.0
+# Perl Command Line Parser v1.2.1
 
 A test script written in [Perl](https://en.wikipedia.org/wiki/Perl "Source: Wikipedia.org") to parse
 command line arguments and output different things depending on the option entered.
 
 This project was made by Ethan Kletschke.
 
+## DEPRECATED!!
+
+This project is now deprecated. No further updates will happen unless someone else takes over.
+
 ## Details of Project
 
 - Date of Initial Commit: 2025-02-28
-- Current Version: `1.1.0`
+- Current Version: `1.2.1` (Deprecated as of 2025-08-12)
 - Language used: [Perl](https://www.perl.org/about.html "Source: www.perl.org")
 
 ## Table of Contents
@@ -91,6 +95,10 @@ Exiting...
 
 
 ## Changelog
+
+### **_1.2.1_**
+
+Stop working on project.
 
 ### **_1.2.0_**
 
