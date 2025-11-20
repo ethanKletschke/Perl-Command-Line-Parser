@@ -1,9 +1,7 @@
-# Editorconfig
-.editorconfig
-
 # Perltidy files
 *.tdy
 *.bak
 
 # Shell script files
 *.sh
+*.cmd

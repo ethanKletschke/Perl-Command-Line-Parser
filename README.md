@@ -1,13 +1,16 @@
 # Perl Command Line Parser v1.2.1
 
-A test script written in [Perl](https://en.wikipedia.org/wiki/Perl "Source: Wikipedia.org") to parse
-command line arguments and output different things depending on the option entered.
+A test script written in Perl to parse command line arguments and output 
+different things depending on the option entered.
 
-This project was made by Ethan Kletschke.
+- Author: Ethan Kletschke
+- Version: `1.2.2` (DEPRECATED)
+- Developed on: Windows 11
+- License: MIT
 
-## DEPRECATED!!
+## _**DEPRECATED!!**_
 
-This project is now deprecated. No further updates will happen unless someone else takes over.
+_**This project is now deprecated. No further updates will happen unless someone else takes over.**_
 
 ## Details of Project
 
@@ -17,7 +20,8 @@ This project is now deprecated. No further updates will happen unless someone el
 
 ## Table of Contents
 
-- [Perl Command Line Parser v1.1.0](#perl-command-line-parser-v110)
+- [Perl Command Line Parser v1.2.1](#perl-command-line-parser-v121)
+  - [_**DEPRECATED!!**_](#deprecated)
   - [Details of Project](#details-of-project)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
@@ -27,15 +31,18 @@ This project is now deprecated. No further updates will happen unless someone el
     - [Single-line Flag Entered with Other Flags](#single-line-flag-entered-with-other-flags)
     - ["Single-line Flag not Entered" Error](#single-line-flag-not-entered-error)
   - [Changelog](#changelog)
+    - [**_1.2.2_**](#122)
+    - [**_1.2.1_**](#121)
     - [**_1.2.0_**](#120)
     - [**_1.1.0_**](#110)
     - [**_1.0_**](#10)
 
 ## Description
 
-The **_Perl Command Line Parser_** is a [CLI](https://en.wikipedia.org/wiki/Command-line_interface "Source: Wikipedia.org") app
-(just a test script) that parses command line arguments passed to the program. It is only intended to be
-a 
+The **_Perl Command Line Parser_** is a simple command-line interface (CLI) app
+(esssentially just a test script) that parses command line arguments passed to 
+the program. It is only intended to be a skills reference, and as a test
+to see how the Perl language works when used for a simple software application.
 
 ## Options
 
@@ -49,7 +56,7 @@ The table below lists the currently-implemented valid command-line arguments:
 |     `-Dbug`      |                       Short for `Display debug`. Turns on debugging messages.                        |
 |     `-Dwarn`     |                       Short for `Display warnings`. Turns on warning messages.                       |
 
-(Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables# "Table generator site"))
+(Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables#))
 
 ## Planned options
 
@@ -66,7 +73,7 @@ The table below lists the planned options that could be implemented in later ver
 
 \* - Not 100% accurate.
 
-(Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables# "Table generator site"))
+(Table generated with [TablesGenerator.com](https://www.tablesgenerator.com/markdown_tables#))
 
 ## Incorrect CLI Input
 
@@ -96,14 +103,17 @@ Exiting...
 
 ## Changelog
 
+### **_1.2.2_**
+
+- Documentation updates:
+  - Add MIT `LICENSE` file.
+  - Tweak `README.md`
+
 ### **_1.2.1_**
 
 Stop working on project.
 
 ### **_1.2.0_**
-
-Sorry for the hiatus. Here's the most recent updates to
-this repository:
 
 - Implementation Tweaks:
   - Add more comments.
