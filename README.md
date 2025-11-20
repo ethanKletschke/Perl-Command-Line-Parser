@@ -12,17 +12,11 @@ different things depending on the option entered.
 
 _**This project is now deprecated. No further updates will happen unless someone else takes over.**_
 
-## Details of Project
-
-- Date of Initial Commit: 2025-02-28
-- Current Version: `1.2.1` (Deprecated as of 2025-08-12)
-- Language used: [Perl](https://www.perl.org/about.html "Source: www.perl.org")
 
 ## Table of Contents
 
 - [Perl Command Line Parser v1.2.1](#perl-command-line-parser-v121)
   - [_**DEPRECATED!!**_](#deprecated)
-  - [Details of Project](#details-of-project)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Options](#options)
