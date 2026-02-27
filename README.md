@@ -7,6 +7,7 @@ different things depending on the option entered.
 - Version: `1.2.2` (DEPRECATED)
 - Developed on: Windows 11
 - License: MIT
+- Project metadata file: [project.yaml](./meta/project.yaml)
 
 ## _**DEPRECATED!!**_
 
