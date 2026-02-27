@@ -1,0 +1,26 @@
+project-meta:
+  project-name: Perl Command Line Parser
+  languages:
+    - Perl
+  status: Stable
+  license: MIT
+  version: 1.2.2
+
+build:
+  dev-environments:
+    - Ubuntu (WSL2)
+  test-environments:
+    - Ubuntu (WSL2)
+  target-platforms:
+    - Ubuntu (WSL2)
+  interpreter:
+    interpreter-name: Perl
+    interpreter-version: 5.38.2
+
+team:
+  author: Ethan Kletschke
+  contributors:
+    - name: Ethan Kletschke
+      role: Author and Owner
+      github-username: ethanKletschke
+      website: https://ethankletschke.netlify.app
