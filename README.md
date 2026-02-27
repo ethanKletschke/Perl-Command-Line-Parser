@@ -1,4 +1,4 @@
-# Perl Command Line Parser v1.2.1
+# Perl Command Line Parser v1.2.2
 
 A test script written in Perl to parse command line arguments and output 
 different things depending on the option entered.
@@ -16,7 +16,7 @@ else takes over.**_
 
 ## Table of Contents
 
-- [Perl Command Line Parser v1.2.1](#perl-command-line-parser-v121)
+- [Perl Command Line Parser v1.2.2](#perl-command-line-parser-v122)
   - [_**DEPRECATED!!**_](#deprecated)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
