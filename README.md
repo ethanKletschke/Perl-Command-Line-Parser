@@ -10,7 +10,8 @@ different things depending on the option entered.
 
 ## _**DEPRECATED!!**_
 
-_**This project is now deprecated. No further updates will happen unless someone else takes over.**_
+_**This project is now deprecated. No further updates will happen unless someone 
+else takes over.**_
 
 
 ## Table of Contents
@@ -24,12 +25,6 @@ _**This project is now deprecated. No further updates will happen unless someone
   - [Incorrect CLI Input](#incorrect-cli-input)
     - [Single-line Flag Entered with Other Flags](#single-line-flag-entered-with-other-flags)
     - ["Single-line Flag not Entered" Error](#single-line-flag-not-entered-error)
-  - [Changelog](#changelog)
-    - [**_1.2.2_**](#122)
-    - [**_1.2.1_**](#121)
-    - [**_1.2.0_**](#120)
-    - [**_1.1.0_**](#110)
-    - [**_1.0_**](#10)
 
 ## Description
 
@@ -93,48 +88,3 @@ Will show the following output (as of v1.1):
 Single-line flag not entered.
 Exiting...
 ```
-
-
-## Changelog
-
-### **_1.2.2_**
-
-- Documentation updates:
-  - Add MIT `LICENSE` file.
-  - Tweak `README.md`
-
-### **_1.2.1_**
-
-Stop working on project.
-
-### **_1.2.0_**
-
-- Implementation Tweaks:
-  - Add more comments.
-  - Tweak flag setting:
-    - Set all flags at once when testing for multiple flags, i.e. setting `$verbose` and unsetting the other flags.
-
-### **_1.1.0_**
-
-New Features:
-
-- Allow `--version` to be used as an alias of `-v`.
-- Allow `--help` to be used as an alias of `-h`.
-
-Implementation Tweaks:
-
-- Re-ordered the `$help` string's list to show single-line flags first.
-
-Bug fixes:
-
-- Tweaked `if` statements to actually allow for warning outputs to be enabled.
-- Tweaked single-argument handling a bit.
-  - Temporarily use the `die` keyword to kill the program when a single-line flag is not entered.
-    - To be fixed in a future release.
-- Fix `README.md`
-  - Add missing heading "[Incorrect CLI Output](#incorrect-cli-input)".
-  - Add various new sections.
-
-### **_1.0_**
-
-Program is initially released onto [Github](https://github.com/ethanKletschke/Perl-Command-Line-Parser).
